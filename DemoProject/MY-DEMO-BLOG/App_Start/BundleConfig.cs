@@ -1,5 +1,6 @@
 ﻿using System.Web;
 using System.Web.Optimization;
+using System.Web.UI.WebControls;
 
 namespace MY_DEMO_BLOG
 {
@@ -8,6 +9,7 @@ namespace MY_DEMO_BLOG
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
+
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
@@ -25,7 +27,21 @@ namespace MY_DEMO_BLOG
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css", "~/Content/kwicks-slider.css", "~/Content/ie.css", "~/Content/responsive.css", "~/Content/docs.css", "~/Content/touchTouch.css"
+                      , "~/Content/zocial.css", "~/Content/bootstrap-social.css", "~/Content/font-awesome.css"));
+
+            bundles.Add(new ScriptBundle("~/Scripts/_references.js"));
+
+            bundles.Add(new ScriptBundle("~/Scripts/custom.js"));
+
+            bundles.Add(new ScriptBundle("~/Scripts/html5.js"));
+
+            bundles.Add(new ScriptBundle("~/Scripts/superfish.js"));
+
+            bundles.Add(new ScriptBundle("~/Scripts/touchTouch.jquery.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/touchTouch.jquery.js"));
+
+
         }
     }
 }
