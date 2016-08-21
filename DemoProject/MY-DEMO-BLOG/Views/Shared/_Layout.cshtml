@@ -1,4 +1,5 @@
 ﻿@using System.Web.UI.WebControls
+@using Microsoft.AspNet.Identity
 <!DOCTYPE html>
 
 <head>
@@ -31,20 +32,16 @@
 
 
                             <ul class="nav sf-menu">
-                                @Html.ActionLink("Meme Generator", "Index", "Home", new {area = ""}, new {@class = "navbar-brand"})
+                                @Html.ActionLink("Meme Generator", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
                                 <li style="font-family: fantasy; font-size: 4.5em; color: white; right: 100px; padding-top: 30px;">MEME GENERATOR</li>
                                 <li style="font-family: fantasy; font-size: 3em;">@Html.ActionLink("Home", "Index", "Home")</li>
                                 <li style="font-family: fantasy; font-size: 3em">@Html.ActionLink("Posts", "Index", "Posts")</li>
                                 <li style="font-family: fantasy; font-size: 3em">@Html.ActionLink("New Post", "Create", "Posts")</li>
-
                             </ul>
                             @Html.Partial("_LoginPartial")
 
-
-
-
                         </div>
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
