@@ -24,5 +24,6 @@ textarea {
 }
 
 .meme {
-    background-color: #EEE;
+    padding: 10px;
+    margin: 0;
 }

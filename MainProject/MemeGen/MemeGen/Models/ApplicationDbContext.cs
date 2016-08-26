@@ -17,5 +17,7 @@ namespace MemeGen.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<MemeGen.Models.Meme> Memes { get; set; }
     }
 }

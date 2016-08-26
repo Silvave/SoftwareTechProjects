@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Gallery</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+@foreach (var ImgPath in Directory.GetFiles(Server.MapPath("~/Images")))
+{
+    var img = new FileInfo(ImgPath);
+    <div class="meme col-md-2">
+        <img src="@Url.Content(String.Format("~/Images/{0}", img.Name))" width="150" height="150" />
+        @Html.ActionLink("Picture", "Details", "Memes")
+    </div>
+}

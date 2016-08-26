@@ -1,0 +1,50 @@
+﻿@model MemeGen.Models.Meme
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Meme</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Path)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Path)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TopText)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TopText)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomText)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomText)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
