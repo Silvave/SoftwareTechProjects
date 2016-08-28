@@ -1,0 +1,27 @@
+﻿@model IEnumerable<MemeGen.Models.Meme>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Gallery</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@foreach (var meme in Model)
+{
+    <a href="@Url.Action("Details", "Memes", new { id = meme.Id })" class="col-md-3">
+        <img src="@Url.Content(String.Format("~/Images/{0}", meme.Path))" width="200" height="200" />
+    </a>
+}
+
+@*@foreach (var ImgPath in Directory.GetFiles(Server.MapPath("~/Images")))
+{
+    var img = new FileInfo(ImgPath);
+    <div class="meme col-md-2">
+        <img src="@Url.Content(String.Format("~/Images/{0}", img.Name))" width="150" height="150" />
+        @Html.ActionLink("Picture", "Details", "Memes")
+    </div>
+}*@
