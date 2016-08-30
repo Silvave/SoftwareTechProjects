@@ -5,6 +5,7 @@
 }
 
 <h2>Details</h2>
+<<<<<<< HEAD
 
 <div>
     <h4>Meme</h4>
@@ -28,6 +29,49 @@
 
         <dt>
             @Html.DisplayNameFor(model => model.TopText)
+=======
+<h4>Meme</h4>
+<hr />
+<div class="detailed-meme">
+    
+    @if (Model.Id > 1)
+    {
+        <a href="@Url.Action("Details", "Memes", new
+                            { id = (Model.Id - 1) })">BACK</a>
+    }
+
+    @if (Model.Id < 5)
+    {
+        //TODO: Need max lenght Memes in the if construction
+        <a href="@Url.Action("Details", "Memes", new
+                            { id = (Model.Id + 1) })">UP</a>
+    }
+
+    <div>
+        <img src="@Url.Content(String.Format("~/Images/{0}", Model.Path))" width="300" height="300" />
+    </div>
+
+    <dl class="dl-horizontal" >
+
+        <dt>
+            Author:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Author.UserName) @*Doesn't work*@
+        </dd>
+
+        <dt>
+            Created on:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            Top Text:
+>>>>>>> BackUp
         </dt>
 
         <dd>
@@ -35,7 +79,11 @@
         </dd>
 
         <dt>
+<<<<<<< HEAD
             @Html.DisplayNameFor(model => model.BottomText)
+=======
+            Bottom Text:
+>>>>>>> BackUp
         </dt>
 
         <dd>

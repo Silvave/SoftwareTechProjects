@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 ﻿@{
+=======
+﻿@model IEnumerable<MemeGen.Models.Meme>
+
+@{
+>>>>>>> BackUp
     ViewBag.Title = "Index";
 }
 
@@ -8,12 +14,27 @@
     @Html.ActionLink("Create New", "Create")
 </p>
 
+<<<<<<< HEAD
 
 @foreach (var ImgPath in Directory.GetFiles(Server.MapPath("~/Images")))
+=======
+@foreach (var meme in Model)
+{
+    <a href="@Url.Action("Details", "Memes", new { id = meme.Id })" class="col-md-3">
+        <img src="@Url.Content(String.Format("~/Images/{0}", meme.Path))" width="200" height="200" />
+    </a>
+}
+
+@*@foreach (var ImgPath in Directory.GetFiles(Server.MapPath("~/Images")))
+>>>>>>> BackUp
 {
     var img = new FileInfo(ImgPath);
     <div class="meme col-md-2">
         <img src="@Url.Content(String.Format("~/Images/{0}", img.Name))" width="150" height="150" />
         @Html.ActionLink("Picture", "Details", "Memes")
     </div>
+<<<<<<< HEAD
 }
+=======
+}*@
+>>>>>>> BackUp

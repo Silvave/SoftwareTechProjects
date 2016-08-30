@@ -67,6 +67,7 @@ C:\Users\Silvave91\Downloads\SoftUni\MyProjects\TestProjects\MemeGen\MemeGen\bin
 C:\Users\Silvave91\Downloads\SoftUni\MyProjects\TestProjects\MemeGen\MemeGen\obj\Debug\MemeGen.csprojResolveAssemblyReference.cache
 C:\Users\Silvave91\Downloads\SoftUni\MyProjects\TestProjects\MemeGen\MemeGen\obj\Debug\MemeGen.dll
 C:\Users\Silvave91\Downloads\SoftUni\MyProjects\TestProjects\MemeGen\MemeGen\obj\Debug\MemeGen.pdb
+<<<<<<< HEAD
 C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\MainProject\MemeGen\MemeGen\bin\roslyn\csc.exe
 C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\MainProject\MemeGen\MemeGen\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\MainProject\MemeGen\MemeGen\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -136,3 +137,5 @@ C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\MainProje
 C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\MainProject\MemeGen\MemeGen\obj\Debug\MemeGen.csprojResolveAssemblyReference.cache
 C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\MainProject\MemeGen\MemeGen\obj\Debug\MemeGen.dll
 C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\MainProject\MemeGen\MemeGen\obj\Debug\MemeGen.pdb
+=======
+>>>>>>> BackUp

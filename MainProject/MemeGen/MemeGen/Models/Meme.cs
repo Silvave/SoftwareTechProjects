@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+<<<<<<< HEAD
+=======
+using System.ComponentModel.DataAnnotations.Schema;
+>>>>>>> BackUp
 using System.Linq;
 using System.Web;
 
@@ -15,6 +19,12 @@ namespace MemeGen.Models
         [Key]
         public int Id { get; set; }
 
+<<<<<<< HEAD
+=======
+        public string Author_Id { get; set; }
+
+        [ForeignKey("Author_Id")]
+>>>>>>> BackUp
         public ApplicationUser Author { get; set; }
 
         public DateTime Date { get; set; }

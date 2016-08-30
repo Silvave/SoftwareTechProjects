@@ -26,4 +26,20 @@ textarea {
 .meme {
     padding: 10px;
     margin: 0;
+<<<<<<< HEAD:MainProject/MemeGen/MemeGen/Content/Site.css
+=======
+}
+
+#wrapper {
+    position: relative;
+}
+
+#topCaption {
+    position: absolute;
+    top: 120px;
+    left: 70px;
+    color: white;
+    font: 20px arial;
+    text-transform: uppercase;
+>>>>>>> BackUp:MainProject/MemeGen/MemeGen/Content/Site.css
 }
