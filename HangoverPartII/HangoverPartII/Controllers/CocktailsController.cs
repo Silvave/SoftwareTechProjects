@@ -54,11 +54,15 @@ namespace HangoverPartII.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Image,Title,Body,NetLikeCount")] Cocktail cocktail/*, [Bind(Include = "Image")] HttpPostedFileBase imageContent*/)
+        public ActionResult Create([Bind(Include = "Id,Image,Title,Body,NetLikeCount")] Cocktail cocktail, HttpPostedFileBase image)
         {
             if (ModelState.IsValid)
             {
+                string name = Path.GetFileName(image.FileName);
+                string path = Path.Combine(Server.MapPath("~/Images"), name);
+                image.SaveAs(path);
                 cocktail.Author = db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
+                cocktail.Image = name;
                 db.Cocktails.Add(cocktail);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -75,7 +79,7 @@ namespace HangoverPartII.Controllers
             string path = Path.Combine(Server.MapPath("~/Images"), name);
             file.SaveAs(path);
 
-            return View("Create");
+            return View("Index");
         }
 
         // GET: Cocktails/Edit/5

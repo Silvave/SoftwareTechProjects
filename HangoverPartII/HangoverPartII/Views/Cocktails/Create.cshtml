@@ -6,17 +6,19 @@
 
 <h2>Create</h2>
 
-@using (Html.BeginForm("UploadImage", "Cocktails", FormMethod.Post, new { enctype = "multipart/form-data" }))
+@*@using (Html.BeginForm("UploadImage", "Cocktails", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
-    <div class="wrapper">
-        <img class="img-responsive" id="file" src="" style="width:300px; height:300px">
-        <input type="submit" style="display: none" id="primaryButton" value="Save Cocktail" />
-    </div>
-}
+   
+}*@
 
-@using(Html.BeginForm())
+@using(Html.BeginForm("Create", "Cocktails", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
+
+    <div class="wrapper">
+        <img class="img-responsive" id="file" src="" style="width: 300px; height: 300px">
+        <input type="submit" style="display: none" id="primaryButton" value="Save Cocktail"/>
+    </div>
 
     <div class="form-horizontal">
         <h4>Cocktail</h4>

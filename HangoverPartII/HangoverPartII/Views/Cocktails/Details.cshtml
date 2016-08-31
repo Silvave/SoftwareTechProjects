@@ -68,7 +68,33 @@
     }
 </div>
 
-<button type="button" class="btn btn-primary">Add Comment</button>
+<div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+        @using (Html.BeginForm("Create", "Comments", FormMethod.Post,
+            new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+
+                @Html.TextAreaFor(model => model.Comments, new { @class = "form-control", @id = "comment",  @style    = "display:none;", @rows = 3 })
+                <input type="button" id="clickMeId" class="btn btn-primary" value="Add Comment" onclick="show      ('comment'); show('submitComment'); hide('clickMeId')" alt="click me">
+                <input type="submit" id="submitComment" value="Create" class="btn btn-default" style="display:none" />   
+        }
+    </div>
+</div>
+
+<script>
+function show(toBlock) {
+        setDisplay(toBlock, 'block');
+    }
+function hide(toNone) {
+        setDisplay(toNone, 'none');
+    }
+function setDisplay(target, str) {
+        document.getElementById(target).style.display = str;
+    }
+</script>
+@*<a type="button" class="btn btn-primary" href="@Url.Action("Create", "Comments", new
+                                         { id = (Model.Cocktail.Id + 1) })" >Add Comment</a>*@
 
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.Cocktail.Id }) |

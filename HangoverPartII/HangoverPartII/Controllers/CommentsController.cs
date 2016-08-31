@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using HangoverPartII.Models;
+using Microsoft.AspNet.Identity;
 
 namespace HangoverPartII.Controllers
 {
@@ -50,15 +51,31 @@ namespace HangoverPartII.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,CocktailId,Date,UserName,Body")] Comment comment)
         {
+            //var cocktailId = db.Cocktails.Local;
+            //var cocktailObj = db.Cocktails.Where(p => p.Id == cocktailId).Single();
+            //comment.Cocktail = cocktailObj;
+            //var authorId = User.Identity.GetUserId();
+            //var authorObj = db.Users.Where(u => u.Id == authorId).Single();
+            //comment.User = authorObj;
+            //var date = DateTime.Now;
+            //comment.Date = date;
             if (ModelState.IsValid)
             {
                 db.Comments.Add(comment);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Details", "Cocktails", new { /*cocktailId. */});
             }
 
-            ViewBag.CocktailId = new SelectList(db.Cocktails, "Id", "Author_Id", comment.CocktailId);
             return View(comment);
+            //if (ModelState.IsValid)
+            //{
+            //    db.Comments.Add(comment);
+            //    db.SaveChanges();
+            //    return RedirectToAction("Index"); //TODO: make it that it only updates
+            //}
+
+            //ViewBag.CocktailId = new SelectList(db.Cocktails, "Id", "Author_Id", comment.CocktailId);
+            //return View(comment);
         }
 
         // GET: Comments/Edit/5
