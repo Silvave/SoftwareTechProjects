@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using HangoverPartII.Models;
+using System.IO;
 
 namespace HangoverPartII.Controllers
 {
@@ -128,6 +129,16 @@ namespace HangoverPartII.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        [HttpPost]
+        public ActionResult Index(HttpPostedFileBase file)
+        {
+            string name = Path.GetFileName(file.FileName);
+            string path = Path.Combine(Server.MapPath("~/Images"), name);
+            file.SaveAs(path);
+
+            return View("Create");
         }
     }
 }
