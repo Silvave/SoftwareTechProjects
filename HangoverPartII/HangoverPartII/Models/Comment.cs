@@ -9,20 +9,24 @@ namespace HangoverPartII.Models
 {
     public class Comment
     {
+        public Comment()
+        {
+            Date = DateTime.Now;
+        }
+        [Key]
         public string Id { get; set; }
 
-        public string CocktailId { get; set; }
+        public int CocktailId { get; set; }
 
-        public DateTime DateTime { get; set; }
+        public DateTime Date { get; set; }
 
         public string UserName { get; set; }
 
         [Required]
         public string Body { get; set; }
-
-        [DefaultValue(false)]
-        public bool Deleted { get; set; }
-
+        
         public Cocktail Cocktail { get; set; }
+
+        public ApplicationUser User { get; set; }
     }
 }

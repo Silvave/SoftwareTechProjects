@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using HangoverPartII.Models;
+using HangoverPartII.ViewModels;
 using System.IO;
 
 namespace HangoverPartII.Controllers
@@ -18,29 +19,33 @@ namespace HangoverPartII.Controllers
         // GET: Cocktails
         public ActionResult Index()
         {
-            //var cocktails = db.Cocktails.Include(c => c.Author).ToList();
-            return View(/*cocktails.ToList()*/);
+            var cocktails = db.Cocktails.Include(c => c.Author);
+            return View(cocktails);
         }
 
         // GET: Cocktails/Details/5
         public ActionResult Details(int? id)
         {
+            CocktailViewModel m = new CocktailViewModel();
+            m.FirstCocktailId = db.Cocktails.OrderBy(x => x.Id).FirstOrDefault();
+            m.LastCocktailId = db.Cocktails.OrderByDescending(x => x.Id).FirstOrDefault();
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Cocktail cocktail = db.Cocktails.Find(id);
-            if (cocktail == null)
+            m.Cocktail = db.Cocktails.Find(id);
+            //m.Cocktail.Author = db.Cocktails.Include(c => c.Author).Where(x );
+            if (m.Cocktail == null)
             {
                 return HttpNotFound();
             }
-            return View(cocktail);
+            //cocktail.Author = db.Cocktails.Add(a => a.Author.UserName);
+            return View(m);
         }
 
         // GET: Cocktails/Create
         public ActionResult Create()
         {
-            //ViewBag.Author_Id = new SelectList(db.ApplicationUsers, "Id", "FullName");
             return View();
         }
 
@@ -49,7 +54,7 @@ namespace HangoverPartII.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Image,Title,Body,NetLikeCount")] Cocktail cocktail)
+        public ActionResult Create([Bind(Include = "Id,Image,Title,Body,NetLikeCount")] Cocktail cocktail/*, [Bind(Include = "Image")] HttpPostedFileBase imageContent*/)
         {
             if (ModelState.IsValid)
             {
@@ -61,6 +66,16 @@ namespace HangoverPartII.Controllers
 
             //ViewBag.Author_Id = new SelectList(db.ApplicationUsers, "Id", "FullName");
             return View(cocktail);
+        }
+
+        [HttpPost]
+        public ActionResult UploadImage(HttpPostedFileBase file)
+        {
+            string name = Path.GetFileName(file.FileName);
+            string path = Path.Combine(Server.MapPath("~/Images"), name);
+            file.SaveAs(path);
+
+            return View("Create");
         }
 
         // GET: Cocktails/Edit/5
@@ -129,16 +144,6 @@ namespace HangoverPartII.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
-        }
-
-        [HttpPost]
-        public ActionResult Index(HttpPostedFileBase file)
-        {
-            string name = Path.GetFileName(file.FileName);
-            string path = Path.Combine(Server.MapPath("~/Images"), name);
-            file.SaveAs(path);
-
-            return View("Create");
         }
     }
 }

@@ -1,59 +1,79 @@
-﻿@model HangoverPartII.Models.Cocktail
-
+﻿@using HangoverPartII.ViewModels
+@model HangoverPartII.ViewModels.CocktailViewModel
 @{
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<div class="previousButton col-md-2">
+    @if (Model.Cocktail.Id > Model.FirstCocktailId.Id)
+    {
+        <ul class="pager">
+            <li>
+                <a class="previousButtonDesign" href="@Url.Action("Details", "Cocktails", new
+                                                 { id = (Model.Cocktail.Id - 1) })"><< Previous</a>
+            </li>
+        </ul>
+    }
+</div>
 
-<div>
-    <h4>Cocktail</h4>
-    <hr />
+<div class="col-md-8">
+    <div>
+        <img src="@Url.Content(String.Format("~/Images/{0}", Model.Cocktail.Image))" width="300" height="300" />
+    </div>
+    
     <dl class="dl-horizontal">
-
+    
         <dt>
-            @Html.DisplayNameFor(model => model.Date)
+            Author:
         </dt>
-
+    
         <dd>
-            @Html.DisplayFor(model => model.Date)
+            @Html.DisplayFor(model => model.Cocktail.Author.UserName) @*Doesn't work*@
         </dd>
-
+    
         <dt>
-            @Html.DisplayNameFor(model => model.Image)
+            Created on:
         </dt>
-
+    
         <dd>
-            @Html.DisplayFor(model => model.Image)
+            @Html.DisplayFor(model => model.Cocktail.Date)
         </dd>
-
+    
         <dt>
-            @Html.DisplayNameFor(model => model.Title)
+            Title:
         </dt>
-
+    
         <dd>
-            @Html.DisplayFor(model => model.Title)
+            @Html.DisplayFor(model => model.Cocktail.Title)
         </dd>
-
+    
         <dt>
-            @Html.DisplayNameFor(model => model.Body)
+            Body:
         </dt>
-
+    
         <dd>
-            @Html.DisplayFor(model => model.Body)
+            @Html.DisplayFor(model => model.Cocktail.Body)
         </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.NetLikeCount)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.NetLikeCount)
-        </dd>
-
+    
     </dl>
 </div>
+
+<div class="actionButton col-md-2">
+    @if (Model.Cocktail.Id < Model.LastCocktailId.Id)
+    {
+    <ul class="pager">
+        <li><a class="NextButtonDesign" href="@Url.Action("Details", "Cocktails", new
+                                         { id = (Model.Cocktail.Id + 1) })">Next >></a></li>
+    </ul>
+    }
+</div>
+
+<button type="button" class="btn btn-primary">Add Comment</button>
+
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Cocktail.Id }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+
+
+

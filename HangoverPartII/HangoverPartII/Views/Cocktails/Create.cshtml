@@ -6,33 +6,29 @@
 
 <h2>Create</h2>
 
-
-@using (Html.BeginForm("Index", "Cocktails", FormMethod.Post, new { enctype = "multipart/form-data" }))
+@using (Html.BeginForm("UploadImage", "Cocktails", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
-    <label for="file">Upload Image:</label>
-    <input type="file" onchange="previewFile()" name="file" id="file" /><br><br>
-    <input type="submit" value="Save Cocktail" />
-        <br><br>
-        @ViewBag.Message
+    <div class="wrapper">
+        <img class="img-responsive" id="file" src="" style="width:300px; height:300px">
+        <input type="submit" style="display: none" id="primaryButton" value="Save Cocktail" />
+    </div>
 }
 
-
-
-@using (Html.BeginForm()) 
+@using(Html.BeginForm())
 {
     @Html.AntiForgeryToken()
 
-
-    <img id="cocktailPicture" src="" />
     <div class="form-horizontal">
         <h4>Cocktail</h4>
         <hr />
+        
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
         <div class="form-group">
             @Html.LabelFor(model => model.Image, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Image, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Image, new { htmlAttributes = new { @type = "file",
+               @onchange = "previewFile()" } })
                 @Html.ValidationMessageFor(model => model.Image, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -48,46 +44,38 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Body, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Body, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.TextAreaFor(model => model.Body, new { htmlAttributes = new { @class= "form-control" } })
+                @*<textarea class="content-field" type="text" value="" placeholder="Text" id="content"></textarea>*@
                 @Html.ValidationMessageFor(model => model.Body, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.NetLikeCount, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.NetLikeCount, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.NetLikeCount, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Create" class="btn btn-default" onclick="document.getElementById('primaryButton').click()" />
             </div>
         </div>
     </div>
 }
-
-
+    
 <script>
-    function previewFile() {
-        var preview = document.querySelector('img'); //selects the query named img
-        var file = document.querySelector('input[type=file]').files[0]; //sames as here
-        var reader = new FileReader();
+   function previewFile(){
+       var preview = document.querySelector('img'); //selects the query named img
+       var file    = document.querySelector('input[type=file]').files[0]; //sames as here
+       var reader  = new FileReader();
 
-        reader.onloadend = function () {
-            preview.src = reader.result;
-        }
+       reader.onloadend = function () {
+           preview.src = reader.result;
+       }
 
-        if (file) {
-            reader.readAsDataURL(file); //reads the data as a URL
-        } else {
-            preview.src = "";
-        }
-    }
+       if (file) {
+           reader.readAsDataURL(file); //reads the data as a URL
+       } else {
+           preview.src = "";
+       }
+  }
 
-    previewFile();
+  previewFile();  //calls the function named previewFile()
 </script>
 
 <div>
