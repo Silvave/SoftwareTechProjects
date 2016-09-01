@@ -17,54 +17,36 @@
 </div>
 
 <div class="col-md-8">
-    <div>
+    <h2>@Html.DisplayFor(model => model.Cocktail.Title)</h2>
+
+    <div class="cocktail-picture">
         <img src="@Url.Content(String.Format("~/Images/{0}", Model.Cocktail.Image))" width="300" height="300" />
     </div>
     
-    <dl class="dl-horizontal">
-    
-        <dt>
-            Author:
-        </dt>
-    
-        <dd>
-            @Html.DisplayFor(model => model.Cocktail.Author.UserName) @*Doesn't work*@
-        </dd>
-    
-        <dt>
-            Created on:
-        </dt>
-    
-        <dd>
-            @Html.DisplayFor(model => model.Cocktail.Date)
-        </dd>
-    
-        <dt>
-            Title:
-        </dt>
-    
-        <dd>
-            @Html.DisplayFor(model => model.Cocktail.Title)
-        </dd>
-    
-        <dt>
-            Body:
-        </dt>
-    
-        <dd>
-            @Html.DisplayFor(model => model.Cocktail.Body)
-        </dd>
-    
-    </dl>
+
+    <div class="cocktail-details">
+        <div>
+            <strong>Author: </strong>@Html.DisplayFor(model => model.Cocktail.Author.UserName) @*Doesn't work*@
+        </div>
+        <br />
+        <div>
+            <strong>Created on: </strong>@Html.DisplayFor(model => model.Cocktail.Date)
+        </div>
+        <br />
+            
+        <div>
+            <strong>Body: </strong>@Html.DisplayFor(model => model.Cocktail.Body)            
+        </div>                
+    </div>
 </div>
 
 <div class="actionButton col-md-2">
     @if (Model.Cocktail.Id < Model.LastCocktailId.Id)
     {
-    <ul class="pager">
-        <li><a class="NextButtonDesign" href="@Url.Action("Details", "Cocktails", new
-                                         { id = (Model.Cocktail.Id + 1) })">Next >></a></li>
-    </ul>
+        <ul class="pager">
+            <li><a class="NextButtonDesign" href="@Url.Action("Details", "Cocktails", 
+                                                 new { id = (Model.Cocktail.Id + 1) })">Next >></a></li>
+        </ul>
     }
 </div>
 
@@ -75,31 +57,35 @@
         {
             @Html.AntiForgeryToken()
 
-                @Html.TextAreaFor(model => model.Comments, new { @class = "form-control", @id = "comment",  @style    = "display:none;", @rows = 3 })
-                <input type="button" id="clickMeId" class="btn btn-primary" value="Add Comment" onclick="show      ('comment'); show('submitComment'); hide('clickMeId')" alt="click me">
-                <input type="submit" id="submitComment" value="Create" class="btn btn-default" style="display:none" />   
+                @Html.TextAreaFor(model => model.Comments, new { @class = "form-control", @id = "comment",  @style = "display:none;", @rows = 7 })
+
+                @Html.ActionLink("Create", "Comments");                                 
+                <br />
+                <br />
+                <div class="button-group">
+                    @Html.ActionLink("Edit", "Edit", new { id = Model.Cocktail.Id }, new { @class = "btn btn-primary" })                    
+                    @Html.ActionLink("Delete", "Delete", new { id = Model.Cocktail.Id }, new { @class = "btn btn-primary" })
+                </div>
         }
+        
+            
     </div>
 </div>
 
 <script>
 function show(toBlock) {
-        setDisplay(toBlock, 'block');
-    }
-function hide(toNone) {
-        setDisplay(toNone, 'none');
-    }
-function setDisplay(target, str) {
-        document.getElementById(target).style.display = str;
-    }
-</script>
+                setDisplay(toBlock, 'block');
+            }
+            function hide(toNone) {
+                setDisplay(toNone, 'none');
+            }
+            function setDisplay(target, str) {
+                document.getElementById(target).style.display = str;
+            }
+            </script>
 @*<a type="button" class="btn btn-primary" href="@Url.Action("Create", "Comments", new
                                          { id = (Model.Cocktail.Id + 1) })" >Add Comment</a>*@
 
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Cocktail.Id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
 
 
 
