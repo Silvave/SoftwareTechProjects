@@ -145,7 +145,7 @@ namespace HangoverPartII.Controllers
             {
                 db.Entry(cocktail).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index" );
             }
 
             return View(cocktail);
