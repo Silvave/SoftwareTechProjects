@@ -4,81 +4,88 @@
     ViewBag.Title = "Create";
 }
 
-<h2 w>Create cocktail</h2>
-
+<img class="CocktailListLogo" style="margin-left: 28%; background: black; padding: 30pt; border-radius: 350pt; margin-top: 15pt;" src="~/Images/cocktaiList.png" />
+<div style="padding: 20pt;background: black; font-size: xx-large; margin-left: 30%; margin-top: 20px; width: 400pt; text-align: center; border-radius: 30pt;">
+    <p style="color: whitesmoke;text-decoration:none" href="/Cocktails/Create">Create your own cocktail</p>
+</div>
+<hr />
 @*@using (Html.BeginForm("UploadImage", "Cocktails", FormMethod.Post, new { enctype = "multipart/form-data" }))
-{
-   
-}*@
+    {
 
-@using(Html.BeginForm("Create", "Cocktails", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    }*@
+
+@using (Html.BeginForm("Create", "Cocktails", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
+    <div style="background: black; border-radius: 30pt; color: whitesmoke; margin-left: 45pt; padding: 25pt; padding-bottom: 300pt;">
 
-    <div class="bash">
-        <div class="img-containter">
-            <img class="img-responsive" id="file" src="">
+        <div class="bash">
+            <div class="img-containter">
+                <img class="img-responsive" id="file" src="" style=" margin-top: 25pt; margin-left: 40pt;">
+            </div>
+
+            <div class="form-horizontal" style="margin-left: 120pt; margin-top: 20pt;">
+                <h4>Cocktail</h4>
+                <hr />
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Image, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Image, new { htmlAttributes = new { @type = "file", @onchange = "previewFile()" } })
+                        @Html.ValidationMessageFor(model => model.Image, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Body, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextAreaFor(model => model.Body, new { htmlAttributes = new { @class = "form-control", @rows = 30, @cols = 30 } })
+                        @Html.ValidationMessageFor(model => model.Body, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Create" class="btn btn-primary" onclick="document.getElementById('primaryButton').click()" />
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <div class="form-horizontal">
-            <h4>Cocktail</h4>
-            <hr />
 
-            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
-            <div class="form-group">
-                @Html.LabelFor(model => model.Image, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.Image, new { htmlAttributes = new { @type = "file", @onchange = "previewFile()" } })
-                    @Html.ValidationMessageFor(model => model.Image, "", new { @class = "text-danger" })
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(model => model.Body, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.TextAreaFor(model => model.Body, new { htmlAttributes = new { @class = "form-control", @rows = 30, @cols = 30 } })                   
-                    @Html.ValidationMessageFor(model => model.Body, "", new { @class = "text-danger" })
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="Create" class="btn btn-primary" onclick="document.getElementById('primaryButton').click()" />
-                </div>
-            </div>
-        </div>
-
-        <img style="width: 350px; margin-left: 100px;" src="~/Content/back.jpg" />
     </div>
 }
-    
+
 <script>
-   function previewFile(){
-       var preview = document.querySelector('img'); //selects the query named img
-       var file    = document.querySelector('input[type=file]').files[0]; //sames as here
-       var reader  = new FileReader();
+    function previewFile() {
+        var preview = document.querySelector('img'); //selects the query named img
+        var file = document.querySelector('input[type=file]').files[0]; //sames as here
+        var reader = new FileReader();
 
-       reader.onloadend = function () {
-           preview.src = reader.result;
-       }
+        reader.onloadend = function () {
+            preview.src = reader.result;
+        }
 
-       if (file) {
-           reader.readAsDataURL(file); //reads the data as a URL
-       } else {
-           preview.src = "";
-       }
-  }
+        if (file) {
+            reader.readAsDataURL(file); //reads the data as a URL
+        } else {
+            preview.src = "";
+        }
+    }
 
-  previewFile();  //calls the function named previewFile()
+    previewFile();  //calls the function named previewFile()
 </script>
 
 
