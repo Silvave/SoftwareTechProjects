@@ -24,9 +24,9 @@ textarea {
 }
 
 .cocktail-body {
-  overflow: auto;
-  width: auto;
-  height: 50px;
+    overflow: auto;
+    width: auto;
+    height: 50px;
 }
 
 .img-containter {
@@ -37,53 +37,65 @@ textarea {
 .form-horizontal {
     float: left;
 }
+
 .footer {
-    position:fixed;
-    bottom:0;
+    position: fixed;
+    bottom: 0;
 }
+
 .bash {
-    width:100%;
+    width: 100%;
 }
+
 #primaryButton {
-    display: none; 
+    display: none;
 }
+
 #file {
     width: 300px;
-     height: 300px;
+    height: 300px;
 }
+
 .cocktail-details {
-    display:inline-block;
+    display: inline-block;
     width: 40%;
     padding-top: 50px;
     vertical-align: top;
 }
+
 .cocktail-picture {
     display: inline-block;
     vertical-align: top;
 }
+
 .previousButton {
     margin-top: 210px;
     border-color: #3276B1;
 }
+
 .actionButton {
     margin-top: 210px;
     border-color: #3276B1;
 }
+
 .previousButtonDesign {
     padding: 15px !important;
     border-color: #3276B1 !important;
 }
+
 .NextButtonDesign {
     padding: 15px !important;
     border-color: #3276B1 !important;
 }
+
 .edit-button {
-    color:white;
+    color: white;
     border-radius: 10px;
     padding: 5px;
     background-color: deepskyblue;
     display: inline-block;
 }
+
 .delete-button {
     border-radius: 10px;
     padding: 5px;
@@ -102,3 +114,34 @@ textarea {
     font: 12px Lato-Light;
     padding: 10px;
 }*/
+#CocktailListLogo {
+    margin-left: 28%;
+    background: black;
+    padding: 30pt;
+    border-radius: 350pt;
+    margin-top: 15pt;
+}
+
+#CreateButton {
+    background: black;
+    font-size: xx-large;
+    margin-left: 45%;
+    margin-top: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 30pt;
+}
+
+#CreateButtonText {
+    color: white;
+    font-size: x-large;
+    margin-left: 20%;
+}
+
+.LikeCounter {
+    font-weight: bold;
+    color: whitesmoke;
+}
+.CocktailImage {
+    border-radius: 65pt;
+}

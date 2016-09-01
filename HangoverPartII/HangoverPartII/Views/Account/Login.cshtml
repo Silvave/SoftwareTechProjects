@@ -5,6 +5,7 @@
 }
 
 <h2>@ViewBag.Title.</h2>
+<div style="background: black; border-radius: 30pt; color: whitesmoke; margin-left: 45pt;padding: 30pt;">
 <div class="row">
     <div class="col-md-8">
         <section id="loginForm">
@@ -44,10 +45,10 @@
                 <p>
                     @Html.ActionLink("Register as a new user", "Register")
                 </p>
-                @* Enable this once you have account confirmation enabled for password reset functionality
-                    <p>
-                        @Html.ActionLink("Forgot your password?", "ForgotPassword")
-                    </p>*@
+                    @* Enable this once you have account confirmation enabled for password reset functionality
+                        <p>
+                            @Html.ActionLink("Forgot your password?", "ForgotPassword")
+                        </p>*@
             }
         </section>
     </div>
@@ -57,7 +58,8 @@
         </section>
     </div>
 </div>
+    </div>
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
