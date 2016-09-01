@@ -74,7 +74,7 @@ namespace HangoverPartII.Controllers
 
         public ActionResult Like (int id)
         {
-            Cocktail update = db.Cocktails.ToList().Find(u => u.Id == id);
+            Cocktail update = db.Cocktails.ToList().Find( u => u.Id == id);
             update.NetLikeCount += 1;
             db.SaveChanges();
             return RedirectToAction("Index");
