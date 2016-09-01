@@ -58,9 +58,7 @@ namespace HangoverPartII.Controllers
         {
             if (ModelState.IsValid)
             {
-                string name = Path.GetFileName(image.FileName);
-                string path = Path.Combine(Server.MapPath("~/Images"), name);
-                image.SaveAs(path);
+                string name = UploadImage(image, cocktail.Id);
                 cocktail.Author = db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
                 cocktail.Image = name;
                 db.Cocktails.Add(cocktail);
@@ -73,13 +71,42 @@ namespace HangoverPartII.Controllers
         }
 
         [HttpPost]
-        public ActionResult UploadImage(HttpPostedFileBase file)
+        public string UploadImage(HttpPostedFileBase file, int id)
         {
-            string name = Path.GetFileName(file.FileName);
-            string path = Path.Combine(Server.MapPath("~/Images"), name);
-            file.SaveAs(path);
+            string name = null;
+            if (ModelState.IsValid)
+            {
+                if (file == null)
+                {
+                    ModelState.AddModelError("File", "Please Upload Your file");
+                }
+                else if (file.ContentLength > 0)
+                {
+                    int maxContentLength = 1024 * 1024 * 3; //3 MB
+                    string[] allowedFileExtensions = { ".jpg", ".gif", ".png", ".pdf" };
 
-            return View("Index");
+                    if (!allowedFileExtensions.Contains(file.FileName.Substring(file.FileName.LastIndexOf('.'))))
+                    {
+                        ModelState.AddModelError("File", "Please file of type: " + string.Join(", ", allowedFileExtensions));
+                    }
+
+                    else if (file.ContentLength > maxContentLength)
+                    {
+                        ModelState.AddModelError("File",
+                            "Your file is too large, maximum allowed size is: " + maxContentLength + " MB");
+                    }
+                    else
+                    {
+                        name = "" + Guid.NewGuid() + file.FileName.Substring(file.FileName.LastIndexOf('.'));
+                        string path = Path.Combine(Server.MapPath("~/Images"), name);
+                        file.SaveAs(path);
+                        ModelState.Clear();
+                        ViewBag.Message = "File uploaded successfully";
+                    }
+                }
+            }
+
+            return name;
         }
 
         // GET: Cocktails/Edit/5
