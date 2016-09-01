@@ -8,13 +8,23 @@ namespace HangoverPartII.ViewModels
 {
     public class CocktailViewModel
     {
-        public IList<Cocktail> Cocktails { get; set; }
+        public IQueryable<Cocktail> Cocktails { get; set; }
 
         public IList<Comment> Comments { get; set; }
 
-        public Cocktail FirstCocktailId { get; set; }
+        public int FirstCocktailId { get; set; }
 
-        public Cocktail LastCocktailId { get; set; }
+        public int LastCocktailId { get; set; }
+
+        public int NextCocktailId { get; set; }
+
+        public int PreviousCocktailId { get; set; }
+
+        public int Comment_Id { get; set; }
+
+        public string Comments_Body { get; set; }
+
+        public int Username_Id { get; set; }
 
         public Cocktail Cocktail { get; set; }
     }

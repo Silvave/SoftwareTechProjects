@@ -27,8 +27,16 @@ namespace HangoverPartII.Controllers
         public ActionResult Details(int? id)
         {
             CocktailViewModel m = new CocktailViewModel();
-            m.FirstCocktailId = db.Cocktails.OrderBy(x => x.Id).FirstOrDefault();
-            m.LastCocktailId = db.Cocktails.OrderByDescending(x => x.Id).FirstOrDefault();
+
+            m.FirstCocktailId = db.Cocktails.OrderBy(x => x.Id).FirstOrDefault().Id;
+            m.LastCocktailId = db.Cocktails.OrderByDescending(x => x.Id).FirstOrDefault().Id;
+
+            foreach (var cocktail in db.Cocktails.OrderByDescending(i => i.Id))
+            { if (cocktail.Id < id) { m.PreviousCocktailId = cocktail.Id; break; } }
+
+            foreach (var cocktail in db.Cocktails.OrderBy(i => i.Id))
+            { if (cocktail.Id > id) { m.NextCocktailId = cocktail.Id; break; } }
+
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -58,9 +66,7 @@ namespace HangoverPartII.Controllers
         {
             if (ModelState.IsValid)
             {
-                cocktail.NetLikeCount = 0;
-                cocktail.Date = DateTime.Now;
-                string name = UploadImage(image, cocktail.Id);
+                string name = UploadImage(image);
                 cocktail.Author = db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
                 cocktail.Image = name;
                 db.Cocktails.Add(cocktail);
@@ -80,7 +86,7 @@ namespace HangoverPartII.Controllers
             return RedirectToAction("Index");
         }
         [HttpPost]
-        public string UploadImage(HttpPostedFileBase file, int id)
+        public string UploadImage(HttpPostedFileBase file)
         {
             string name = null;
             if (ModelState.IsValid)

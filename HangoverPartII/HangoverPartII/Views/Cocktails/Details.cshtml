@@ -5,19 +5,18 @@
 }
 
 <div class="previousButton col-md-2">
-    @if (Model.Cocktail.Id > Model.FirstCocktailId.Id)
+    @if (Model.Cocktail.Id > Model.FirstCocktailId)
     {
         <ul class="pager">
             <li>
                 <a class="previousButtonDesign" href="@Url.Action("Details", "Cocktails", new
-                                                 { id = (Model.Cocktail.Id - 1) })"><< Previous</a>
+                                                 { id = Model.PreviousCocktailId })"><< Previous</a>
             </li>
         </ul>
     }
 </div>
 
 <div class="col-md-8">
-    <h2>@Html.DisplayFor(model => model.Cocktail.Title)</h2>
 
     <div class="cocktail-picture">
         <img src="@Url.Content(String.Format("~/Images/{0}", Model.Cocktail.Image))" width="300" height="300" />
@@ -41,11 +40,11 @@
 </div>
 
 <div class="actionButton col-md-2">
-    @if (Model.Cocktail.Id < Model.LastCocktailId.Id)
+    @if (Model.Cocktail.Id < Model.LastCocktailId)
     {
         <ul class="pager">
             <li><a class="NextButtonDesign" href="@Url.Action("Details", "Cocktails", 
-                                                 new { id = (Model.Cocktail.Id + 1) })">Next >></a></li>
+                                                 new { id = Model.NextCocktailId  })">Next >></a></li>
         </ul>
     }
 </div>
@@ -59,7 +58,7 @@
 
                 @Html.TextAreaFor(model => model.Comments, new { @class = "form-control", @id = "comment",  @style = "display:none;", @rows = 7 })
 
-                @Html.ActionLink("Create", "Comments");                                 
+                @Html.ActionLink("Create", "Create", "Comments");                                 
                 <br />
                 <br />
                 <div class="button-group">
@@ -82,9 +81,7 @@ function show(toBlock) {
             function setDisplay(target, str) {
                 document.getElementById(target).style.display = str;
             }
-            </script>
-@*<a type="button" class="btn btn-primary" href="@Url.Action("Create", "Comments", new
-                                         { id = (Model.Cocktail.Id + 1) })" >Add Comment</a>*@
+</script>
 
 
 
