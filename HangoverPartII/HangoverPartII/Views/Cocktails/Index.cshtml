@@ -20,5 +20,7 @@
             <img src="@Url.Content(String.Format("~/Images/{0}", cocktail.Image))"
                  width="200" height="200" />
         </a>
+        @Html.DisplayFor(modelItem => cocktail.NetLikeCount) Likes <br/>
+        @Html.ActionLink("Like","Like", new { id = cocktail.Id})
     </div>
 }

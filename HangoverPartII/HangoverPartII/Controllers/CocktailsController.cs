@@ -58,6 +58,8 @@ namespace HangoverPartII.Controllers
         {
             if (ModelState.IsValid)
             {
+                cocktail.NetLikeCount = 0;
+                cocktail.Date = DateTime.Now;
                 string name = UploadImage(image, cocktail.Id);
                 cocktail.Author = db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
                 cocktail.Image = name;
@@ -70,6 +72,13 @@ namespace HangoverPartII.Controllers
             return View(cocktail);
         }
 
+        public ActionResult Like (int id)
+        {
+            Cocktail update = db.Cocktails.ToList().Find(u => u.Id == id);
+            update.NetLikeCount += 1;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
         [HttpPost]
         public string UploadImage(HttpPostedFileBase file, int id)
         {
