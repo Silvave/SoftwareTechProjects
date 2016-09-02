@@ -55,8 +55,8 @@ namespace HangoverPartII
             //   consumerSecret: "");
 
             app.UseFacebookAuthentication(
-               appId: "1784720958438868",
-               appSecret: "2460fc81dbb4671802e5598def0ac50a");
+               appId: "1943977415829230",
+               appSecret: "a9a8486a1ab982cbdc5e4050731990e2");
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {

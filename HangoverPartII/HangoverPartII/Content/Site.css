@@ -200,6 +200,7 @@ input::-webkit-input-placeholder{
      padding-bottom: 20pt; 
      padding-top: 10pt;
      margin-left: 70px;
+     margin-bottom: 20px;
      border-radius: 10px;
 }
 #Facebook {
@@ -207,5 +208,8 @@ input::-webkit-input-placeholder{
 }
 #Google {
     background-color: red !important;
+}
+.text-mix {
+    color: black !important;
 }
 
