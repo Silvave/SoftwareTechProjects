@@ -57,26 +57,24 @@
 <br/>
 
 <div class="form-group">
-    <div class="col-md-offset-2 col-md-10">
-
-        @foreach (var comment in Model.Comments)
-        {
-            <div class="well well-sm col-md-6">
-                <b>@comment.Body</b>
-                <p>
-                    <small><i>@comment.UserName</i></small>
-                    <small><i>@comment.Date</i></small>
-                </p>
-                @Html.ActionLink("Edit", "Edit", new { id = comment.Id, controller="Comments" }) |
-                @Html.ActionLink("Delete", "Delete", new { id = comment.Id, controller="Comments" })
-            </div>
-        }
+    <div class="comment-container col-md-offset-2 col-md-8">
+            @foreach (var comment in Model.Comments)
+            {
+                <div class="well well-sm col-md-6">
+                    <b>@comment.Body</b>
+                    <p>
+                        <small><i>@comment.UserName</i></small>
+                        <small><i>@comment.Date</i></small>
+                    </p>
+                    @Html.ActionLink("Edit", "Edit", new { id = comment.Id, controller = "Comments" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = comment.Id, controller = "Comments" })                    
+                </div>
+            }
     </div>
 </div>
 
 <div class="form-group">
-    <div class="col-md-offset-2 col-md-10">
-
+    <div class="comment-container col-md-offset-2 col-md-8">       
         @Html.Action("Create", "Comments")
 
     </div>

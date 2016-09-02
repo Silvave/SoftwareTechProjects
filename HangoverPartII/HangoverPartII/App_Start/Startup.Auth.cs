@@ -54,15 +54,16 @@ namespace HangoverPartII
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "1784720958438868",
+               appSecret: "2460fc81dbb4671802e5598def0ac50a");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "595663310737-uh27p89akmhbkbos04tfa0s7fiuqobqu.apps.googleusercontent.com",
+                ClientSecret = "FeUXYzBJ34CvfeKxrKRZ8a4o"
+            });
+
         }
     }
 }

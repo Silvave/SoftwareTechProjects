@@ -35,7 +35,7 @@ namespace HangoverPartII.Models
 
         [Required]
         [StringLength(4000)]
-        [Display(Name = "Body")]
+        [Display(Name = "Mixing")]
         public string Body { get; set; }
 
         [DefaultValue(0)]

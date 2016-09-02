@@ -1,4 +1,5 @@
-﻿body {
+﻿@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -29,7 +30,7 @@ textarea {
     height: 50px;
 }
 
-.img-containter {
+.img-container {
     float: left;
     margin-right: 25px;
 }
@@ -153,8 +154,18 @@ textarea {
     color: black;
 }
 body {
+    font-family: 'Raleway', sans-serif;
     background-image: url(/Images/drink.jpg);
 }
 .back-container {
-    background-color: #bbacab
+    background-color: rgba(187, 172, 171, 0.6);
+}
+.comment-container {
+    background-color: rgba(187, 172, 171, 0.6);
+}
+.temp {
+    padding: 20pt; background-color: rgba(187, 172, 171, 0.6); font-size: xx-large; margin-left: 30%; margin-top: 20px; width: 400pt; text-align: center; border-radius: 30pt;
+}
+.temp1 {
+    background-color: rgba(187, 172, 171, 0.6); border-radius: 30pt; color: whitesmoke; margin-left: 45pt; padding: 25pt; padding-bottom: 300pt;
 }
