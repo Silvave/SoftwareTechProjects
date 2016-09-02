@@ -67,210 +67,72 @@ C:\Users\Silvave91\Downloads\SoftUni\MyProjects\TestProjects\HangoverPartII\Hang
 C:\Users\Silvave91\Downloads\SoftUni\MyProjects\TestProjects\HangoverPartII\HangoverPartII\obj\Debug\HangoverPartII.csprojResolveAssemblyReference.cache
 C:\Users\Silvave91\Downloads\SoftUni\MyProjects\TestProjects\HangoverPartII\HangoverPartII\obj\Debug\HangoverPartII.dll
 C:\Users\Silvave91\Downloads\SoftUni\MyProjects\TestProjects\HangoverPartII\HangoverPartII\obj\Debug\HangoverPartII.pdb
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\csc.exe
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\vbc.exe
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\VBCSCompiler.exe
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\HangoverPartII.dll.config
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\HangoverPartII.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\HangoverPartII.pdb
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Antlr3.Runtime.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\EntityFramework.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\EntityFramework.SqlServer.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Newtonsoft.Json.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Owin.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Helpers.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Mvc.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Optimization.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Razor.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.Razor.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\WebGrease.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Helpers.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Mvc.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Optimization.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Razor.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.Razor.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Antlr3.Runtime.pdb
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Newtonsoft.Json.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\EntityFramework.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\EntityFramework.SqlServer.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\obj\Debug\HangoverPartII.csprojResolveAssemblyReference.cache
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\obj\Debug\HangoverPartII.dll
-C:\Users\Silvave91\Downloads\SoftUni\Repositories\SoftwareTechProjects\HangoverPartII\HangoverPartII\obj\Debug\HangoverPartII.pdb
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\csc.exe
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\vbc.exe
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\VBCSCompiler.exe
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\HangoverPartII.dll.config
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\HangoverPartII.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\HangoverPartII.pdb
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Antlr3.Runtime.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\EntityFramework.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\EntityFramework.SqlServer.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Newtonsoft.Json.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Owin.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Helpers.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Mvc.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Optimization.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Razor.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.Deployment.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.Razor.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\WebGrease.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Helpers.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Mvc.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Optimization.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Razor.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.Deployment.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.Razor.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Antlr3.Runtime.pdb
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Newtonsoft.Json.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\EntityFramework.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\EntityFramework.SqlServer.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\obj\Debug\HangoverPartII.csprojResolveAssemblyReference.cache
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\obj\Debug\HangoverPartII.dll
-C:\Users\root\Desktop\comments\SoftwareTechProjects\HangoverPartII\HangoverPartII\obj\Debug\HangoverPartII.pdb
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\csc.exe
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\vbc.exe
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\VBCSCompiler.exe
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\HangoverPartII.dll.config
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\HangoverPartII.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\HangoverPartII.pdb
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Antlr3.Runtime.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\EntityFramework.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\EntityFramework.SqlServer.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Newtonsoft.Json.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Owin.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Helpers.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Mvc.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Optimization.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Razor.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.Razor.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\WebGrease.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Helpers.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Mvc.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Optimization.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.Razor.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.Razor.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Antlr3.Runtime.pdb
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Newtonsoft.Json.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\EntityFramework.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\EntityFramework.SqlServer.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\obj\Debug\HangoverPartII.csprojResolveAssemblyReference.cache
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\obj\Debug\HangoverPartII.dll
-C:\Users\Rostislav Kolev\Source\Repos\TeamProject\SoftwareTechProjects\HangoverPartII\HangoverPartII\obj\Debug\HangoverPartII.pdb
+D:\HangoverPartII\HangoverPartII\bin\roslyn\csc.exe
+D:\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\HangoverPartII\HangoverPartII\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\HangoverPartII\HangoverPartII\bin\roslyn\System.Collections.Immutable.dll
+D:\HangoverPartII\HangoverPartII\bin\roslyn\System.Reflection.Metadata.dll
+D:\HangoverPartII\HangoverPartII\bin\roslyn\vbc.exe
+D:\HangoverPartII\HangoverPartII\bin\roslyn\VBCSCompiler.exe
+D:\HangoverPartII\HangoverPartII\bin\roslyn\VBCSCompiler.exe.config
+D:\HangoverPartII\HangoverPartII\bin\HangoverPartII.dll.config
+D:\HangoverPartII\HangoverPartII\bin\HangoverPartII.dll
+D:\HangoverPartII\HangoverPartII\bin\HangoverPartII.pdb
+D:\HangoverPartII\HangoverPartII\bin\Antlr3.Runtime.dll
+D:\HangoverPartII\HangoverPartII\bin\EntityFramework.dll
+D:\HangoverPartII\HangoverPartII\bin\EntityFramework.SqlServer.dll
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.Core.dll
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.dll
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Cookies.dll
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.dll
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Facebook.dll
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Google.dll
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.OAuth.dll
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Twitter.dll
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.Web.Infrastructure.dll
+D:\HangoverPartII\HangoverPartII\bin\Newtonsoft.Json.dll
+D:\HangoverPartII\HangoverPartII\bin\Owin.dll
+D:\HangoverPartII\HangoverPartII\bin\System.Web.Helpers.dll
+D:\HangoverPartII\HangoverPartII\bin\System.Web.Mvc.dll
+D:\HangoverPartII\HangoverPartII\bin\System.Web.Optimization.dll
+D:\HangoverPartII\HangoverPartII\bin\System.Web.Razor.dll
+D:\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.Deployment.dll
+D:\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.dll
+D:\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.Razor.dll
+D:\HangoverPartII\HangoverPartII\bin\WebGrease.dll
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\HangoverPartII\HangoverPartII\bin\System.Web.Helpers.xml
+D:\HangoverPartII\HangoverPartII\bin\System.Web.Mvc.xml
+D:\HangoverPartII\HangoverPartII\bin\System.Web.Optimization.xml
+D:\HangoverPartII\HangoverPartII\bin\System.Web.Razor.xml
+D:\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.xml
+D:\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.Deployment.xml
+D:\HangoverPartII\HangoverPartII\bin\System.Web.WebPages.Razor.xml
+D:\HangoverPartII\HangoverPartII\bin\Antlr3.Runtime.pdb
+D:\HangoverPartII\HangoverPartII\bin\Newtonsoft.Json.xml
+D:\HangoverPartII\HangoverPartII\bin\EntityFramework.xml
+D:\HangoverPartII\HangoverPartII\bin\EntityFramework.SqlServer.xml
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.Core.xml
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.xml
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.xml
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Facebook.xml
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Cookies.xml
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.OAuth.xml
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Google.xml
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.Twitter.xml
+D:\HangoverPartII\HangoverPartII\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\HangoverPartII\HangoverPartII\obj\Debug\HangoverPartII.csprojResolveAssemblyReference.cache
+D:\HangoverPartII\HangoverPartII\obj\Debug\HangoverPartII.dll
+D:\HangoverPartII\HangoverPartII\obj\Debug\HangoverPartII.pdb

@@ -1,84 +1,59 @@
-﻿@using HangoverPartII.ViewModels
-@model HangoverPartII.ViewModels.CocktailViewModel
+﻿@model HangoverPartII.Models.Cocktail
+
 @{
     ViewBag.Title = "Details";
 }
 
-<div class="previousButton col-md-2">
-    @if (Model.Cocktail.Id > Model.FirstCocktailId)
-    {
-        <ul class="pager">
-            <li>
-                <a class="previousButtonDesign" href="@Url.Action("Details", "Cocktails", new
-                                                 { id = Model.PreviousCocktailId })"><< Previous</a>
-            </li>
-        </ul>
-    }
+<h2>Details</h2>
+
+<div>
+    <h4>Cocktail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Image)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Body)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Body)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NetLikeCount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NetLikeCount)
+        </dd>
+
+    </dl>
 </div>
-
-<div class="back-container col-md-8">
-
-    <div class="cocktail-picture">
-        <img src="@Url.Content(String.Format("~/Images/{0}", Model.Cocktail.Image))" width="300" height="300" />
-    </div>
-
-
-    <div class="cocktail-details">
-        <div>
-            <strong>Author: </strong>@Html.DisplayFor(model => model.Cocktail.Author.UserName)
-        </div>
-        <br />
-        <div>
-            <strong>Created on: </strong>@Html.DisplayFor(model => model.Cocktail.Date)
-        </div>
-        <br />
-
-        <div>
-            <strong>Body: </strong>@Html.DisplayFor(model => model.Cocktail.Body)
-        </div>
-        <div class="button-group">
-            @Html.ActionLink("Edit", "Edit", new { id = Model.Cocktail.Id }, new { @class = "btn btn-primary" })
-            @Html.ActionLink("Delete", "Delete", new { id = Model.Cocktail.Id }, new { @class = "btn btn-primary" })
-        </div>
-    </div>
-</div>
-
-<div class="actionButton col-md-2">
-    @if (Model.Cocktail.Id < Model.LastCocktailId)
-    {
-        <ul class="pager">
-            <li>
-                <a class="NextButtonDesign" href="@Url.Action("Details", "Cocktails",
-                                                      new {id = Model.NextCocktailId})">Next >></a>
-            </li>
-        </ul>
-    }
-</div>
-<br/>
-
-<div class="form-group">
-    <div class="comment-container col-md-offset-2 col-md-8">
-            @foreach (var comment in Model.Comments)
-            {
-                <div class="well well-sm col-md-6">
-                    <b>@comment.Body</b>
-                    <p>
-                        <small><i>@comment.UserName</i></small>
-                        <small><i>@comment.Date</i></small>
-                    </p>
-                    @Html.ActionLink("Edit", "Edit", new { id = comment.Id, controller = "Comments" }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = comment.Id, controller = "Comments" })                    
-                </div>
-            }
-    </div>
-</div>
-
-<div class="form-group">
-    <div class="comment-container col-md-offset-2 col-md-8">       
-        @Html.Action("Create", "Comments")
-
-    </div>
-</div>
-
-
-
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
