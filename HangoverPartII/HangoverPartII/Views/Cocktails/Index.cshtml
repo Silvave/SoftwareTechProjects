@@ -5,20 +5,20 @@
     ViewBag.Title = "Index";
 }
 
-<img class="CocktailListLogo" style="margin-left: 28%; background: black; padding: 30pt; border-radius: 350pt; margin-top: 15pt;" src="~/Images/cocktaiList.png" />
-<div style="background: black; font-size: xx-large; margin-left: 45%; margin-top: 20px; width: 200px; text-align: center; border-radius: 30pt;">
-    <a style="color: whitesmoke;text-decoration:none" href="/Cocktails/Create">Create New</a></div>
+<img class="CocktailListLogo" style="margin-left: 28%; background-color: rgba(187, 172, 171, 0.6); padding: 30pt; border-radius: 350pt; margin-top: 15pt;" src="~/Images/cocktaiList.png" />
+<div style="background-color: rgba(187, 172, 171, 0.6); font-size: xx-large; margin-left: 45%; margin-top: 20px; width: 200px; text-align: center; border-radius: 30pt;">
+    <a style="color: whitesmoke; text-decoration:none" href="/Cocktails/Create">Create New</a></div>
 <hr />
 
 @foreach (var cocktail in Model)
 {
-    <div class="col-md-3" style="background: black; padding-bottom: 20pt; padding-top: 10pt;">
+    <div class="col-md-3 single-cocktail" >
         <b style="color: white; font-size: x-large; margin-left: 20%;">@Html.DisplayFor(modelItem => cocktail.Title)</b>
         <div>
             <p style="font-weight: bold; color: whitesmoke;"> @Html.DisplayFor(modelItem => cocktail.NetLikeCount) Likes</p>
             @if (Request.IsAuthenticated)
             {
-                <p> @Html.ActionLink("Like", "Like", new { id = cocktail.Id })</p>
+                <p> @Html.ActionLink("Like", "Like", new { id = cocktail.Id }, new { @class = "btn btn-primary like-button" })</p>
             }
         </div>
 
