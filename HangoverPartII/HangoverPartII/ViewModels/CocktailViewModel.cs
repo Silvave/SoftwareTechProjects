@@ -8,9 +8,9 @@ namespace HangoverPartII.ViewModels
 {
     public class CocktailViewModel
     {
-        public IQueryable<Cocktail> Cocktails { get; set; }
+        public ICollection<Cocktail> Cocktails { get; set; }
 
-        public IList<Comment> Comments { get; set; }
+        public ICollection<Comment> Comments { get; set; }
 
         public int FirstCocktailId { get; set; }
 

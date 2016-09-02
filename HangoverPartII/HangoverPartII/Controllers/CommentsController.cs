@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using HangoverPartII.Models;
+using HangoverPartII.ViewModels;
 using Microsoft.AspNet.Identity;
 
 namespace HangoverPartII.Controllers
@@ -40,7 +41,6 @@ namespace HangoverPartII.Controllers
         // GET: Comments/Create
         public ActionResult Create()
         {
-            ViewBag.CocktailId = new SelectList(db.Cocktails, "Id", "Author_Id");
             return View();
         }
 
@@ -49,33 +49,19 @@ namespace HangoverPartII.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,CocktailId,Date,UserName,Body")] Comment comment)
+        public ActionResult Create([Bind(Include = "Body")] Comment comment)
         {
-            //var cocktailId = db.Cocktails.Local;
-            //var cocktailObj = db.Cocktails.Where(p => p.Id == cocktailId).Single();
-            //comment.Cocktail = cocktailObj;
-            //var authorId = User.Identity.GetUserId();
-            //var authorObj = db.Users.Where(u => u.Id == authorId).Single();
-            //comment.User = authorObj;
-            //var date = DateTime.Now;
-            //comment.Date = date;
+            comment.CocktailId = (int)Session["CocktailID"];
+            comment.UserName = (string)Session["Username"];
+
             if (ModelState.IsValid)
             {
                 db.Comments.Add(comment);
                 db.SaveChanges();
-                return RedirectToAction("Details", "Cocktails", new { /*cocktailId. */});
+                return RedirectToAction("Details", "Cocktails", new { id = comment.CocktailId });
             }
 
             return View(comment);
-            //if (ModelState.IsValid)
-            //{
-            //    db.Comments.Add(comment);
-            //    db.SaveChanges();
-            //    return RedirectToAction("Index"); //TODO: make it that it only updates
-            //}
-
-            //ViewBag.CocktailId = new SelectList(db.Cocktails, "Id", "Author_Id", comment.CocktailId);
-            //return View(comment);
         }
 
         // GET: Comments/Edit/5

@@ -20,13 +20,15 @@ namespace HangoverPartII.Controllers
         public ActionResult Index()
         {
             var cocktails = db.Cocktails.Include(c => c.Author);
-            return View(cocktails);
+            return View(cocktails.ToList());
         }
 
         // GET: Cocktails/Details/5
         public ActionResult Details(int? id)
         {
             CocktailViewModel m = new CocktailViewModel();
+
+            m.Comments = db.Comments.Where(x => x.CocktailId == id).ToList(); // Get comments for cocktail
 
             m.FirstCocktailId = db.Cocktails.OrderBy(x => x.Id).FirstOrDefault().Id;
             m.LastCocktailId = db.Cocktails.OrderByDescending(x => x.Id).FirstOrDefault().Id;
@@ -42,12 +44,17 @@ namespace HangoverPartII.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             m.Cocktail = db.Cocktails.Find(id);
-            //m.Cocktail.Author = db.Cocktails.Include(c => c.Author).Where(x );
+            m.Cocktail.Author = db.Users.Find(m.Cocktail.Author_Id);
+
+            Session["CocktailID"] = id;
+            
+            Session["Username"] = m.Cocktail.Author.FullName;
+
             if (m.Cocktail == null)
             {
                 return HttpNotFound();
             }
-            //cocktail.Author = db.Cocktails.Add(a => a.Author.UserName);
+
             return View(m);
         }
 
@@ -74,7 +81,6 @@ namespace HangoverPartII.Controllers
                 return RedirectToAction("Index");
             }
 
-            //ViewBag.Author_Id = new SelectList(db.ApplicationUsers, "Id", "FullName");
             return View(cocktail);
         }
 
@@ -85,6 +91,7 @@ namespace HangoverPartII.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
         [HttpPost]
         public string UploadImage(HttpPostedFileBase file)
         {

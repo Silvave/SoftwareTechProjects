@@ -32,9 +32,13 @@
             <strong>Created on: </strong>@Html.DisplayFor(model => model.Cocktail.Date)
         </div>
         <br />
-            
+
         <div>
-            <strong>Body: </strong>@Html.DisplayFor(model => model.Cocktail.Body)            
+            <strong>Body: </strong>@Html.DisplayFor(model => model.Cocktail.Body)
+        </div>
+        <div class="button-group">
+            @Html.ActionLink("Edit", "Edit", new { id = Model.Cocktail.Id }, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Delete", "Delete", new { id = Model.Cocktail.Id }, new { @class = "btn btn-primary" })
         </div>                
     </div>
 </div>
@@ -43,31 +47,32 @@
     @if (Model.Cocktail.Id < Model.LastCocktailId)
     {
         <ul class="pager">
-            <li><a class="NextButtonDesign" href="@Url.Action("Details", "Cocktails", 
-                                                 new { id = Model.NextCocktailId  })">Next >></a></li>
+            <li>
+                <a class="NextButtonDesign" href="@Url.Action("Details", "Cocktails",
+                                                      new {id = Model.NextCocktailId})">Next >></a>
+            </li>
         </ul>
     }
+</div>
+<br/>
+<div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+        <table class="table table-striped table-hover ">
+            <tbody>
+                @foreach (var comment in Model.Comments)
+                {
+                    <tr><td><i>@comment.Body</i></td></tr>
+                }
+            </tbody>
+        </table>
+    </div>
 </div>
 
 <div class="form-group">
     <div class="col-md-offset-2 col-md-10">
-        @using (Html.BeginForm("Create", "Comments", FormMethod.Post,
-            new { enctype = "multipart/form-data" }))
-        {
-            @Html.AntiForgeryToken()
 
-                @Html.TextAreaFor(model => model.Comments, new { @class = "form-control", @id = "comment",  @style = "display:none;", @rows = 7 })
+        @Html.Action("Create", "Comments")                    
 
-                @Html.ActionLink("Create", "Create", "Comments");                                 
-                <br />
-                <br />
-                <div class="button-group">
-                    @Html.ActionLink("Edit", "Edit", new { id = Model.Cocktail.Id }, new { @class = "btn btn-primary" })                    
-                    @Html.ActionLink("Delete", "Delete", new { id = Model.Cocktail.Id }, new { @class = "btn btn-primary" })
-                </div>
-        }
-        
-            
     </div>
 </div>
 
