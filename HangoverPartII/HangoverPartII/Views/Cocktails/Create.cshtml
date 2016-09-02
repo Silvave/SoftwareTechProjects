@@ -4,18 +4,19 @@
     ViewBag.Title = "Create";
 }
 
-<div style="padding: 20pt;background: black; font-size: xx-large; margin-left: 30%; margin-top: 20px; width: 400pt; text-align: center; border-radius: 30pt;">
-    <p style="color: whitesmoke;text-decoration:none" href="/Cocktails/Create">Create your own cocktail</p>
+<div class="temp">
+    <p style="color: black ;text-decoration:none" href="/Cocktails/Create">Create your own cocktail</p>
 </div>
-<hr />
-
+<br/>
+<br />
+<br />  
 @using (Html.BeginForm("Create", "Cocktails", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
-    <div style="background: black; border-radius: 30pt; color: whitesmoke; margin-left: 45pt; padding: 25pt; padding-bottom: 300pt;">
+    <div class="temp1">
 
         <div class="bash">
-            <div class="img-containter">
+            <div class="img-container">
                 <img class="img-responsive" id="file" src="" style=" margin-top: 25pt; margin-left: 40pt;">
             </div>
 
@@ -58,27 +59,6 @@
         </div>
     </div>
 }
-
-<script>
-    function previewFile() {
-        var preview = document.querySelector('img'); //selects the query named img
-        var file = document.querySelector('input[type=file]').files[0]; //sames as here
-        var reader = new FileReader();
-
-        reader.onloadend = function () {
-            preview.src = reader.result;
-        }
-
-        if (file) {
-            reader.readAsDataURL(file); //reads the data as a URL
-        } else {
-            preview.src = "";
-        }
-    }
-
-    previewFile();  //calls the function named previewFile()
-</script>
-
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
