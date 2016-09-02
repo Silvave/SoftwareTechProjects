@@ -65,7 +65,7 @@ namespace HangoverPartII.Controllers
         }
 
         // GET: Comments/Edit/5
-        public ActionResult Edit(string id)
+        public ActionResult Edit(int id)
         {
             if (id == null)
             {
@@ -98,7 +98,7 @@ namespace HangoverPartII.Controllers
         }
 
         // GET: Comments/Delete/5
-        public ActionResult Delete(string id)
+        public ActionResult Delete(int id)
         {
             if (id == null)
             {
@@ -115,7 +115,7 @@ namespace HangoverPartII.Controllers
         // POST: Comments/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(string id)
+        public ActionResult DeleteConfirmed(int id)
         {
             Comment comment = db.Comments.Find(id);
             db.Comments.Remove(comment);
