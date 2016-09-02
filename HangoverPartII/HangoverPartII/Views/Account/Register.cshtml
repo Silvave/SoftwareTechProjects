@@ -6,11 +6,15 @@
 @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
 
+<<<<<<< HEAD
     <div style="background-color: rgba(187, 172, 171, 0.6); border-radius: 30pt; color: whitesmoke; margin-left: 45pt; padding: 25pt;">
+=======
+    <div style="background: rgba(187, 172, 171, 0.6); border-radius: 30pt; color: whitesmoke; margin-left: 45pt; padding: 25pt;">
+>>>>>>> 0488a86d3253e94faf1f274e04f3844c6ec9980d
         @Html.AntiForgeryToken()
-        <h3 style="margin-left: 110pt;">Sign up</h3>
-        <hr />
-        <div class="form-group">
+        <h3 style="margin-left: 100pt;">Sign up</h3>
+        <br/> 
+               <div class="form-group">
             @Html.LabelFor(m => m.UserName, new { @class = "col-md-2 control-label" })
             <div class="col-md-10">
                 <div style="margin-left: 10pt;">

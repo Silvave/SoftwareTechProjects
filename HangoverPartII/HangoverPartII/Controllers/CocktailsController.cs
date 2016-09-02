@@ -50,6 +50,8 @@ namespace HangoverPartII.Controllers
             
             Session["Username"] = m.Cocktail.Author.FullName;
 
+            Session["Author_Id"] = m.Cocktail.Author_Id;
+
             if (m.Cocktail == null)
             {
                 return HttpNotFound();
@@ -59,6 +61,7 @@ namespace HangoverPartII.Controllers
         }
 
         // GET: Cocktails/Create
+        [Authorize]
         public ActionResult Create()
         {
             return View();
@@ -76,6 +79,7 @@ namespace HangoverPartII.Controllers
                 string name = UploadImage(image);
                 cocktail.Author = db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
                 cocktail.Image = name;
+                cocktail.Date=DateTime.Now;
                 db.Cocktails.Add(cocktail);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -151,9 +155,16 @@ namespace HangoverPartII.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [Authorize]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Date,Image,Title,Body,NetLikeCount")] Cocktail cocktail)
+        public ActionResult Edit([Bind(Include = "Author_Id,Image,Title,Body")] Cocktail cocktail)
         {
+            cocktail.Id = (int)Session["CocktailID"];
+
+            cocktail.Author = db.Users.Find((string)Session["Author_Id"]);
+
+            cocktail.Author_Id = (string)Session["Author_Id"];
+
             if (ModelState.IsValid)
             {
                 db.Entry(cocktail).State = EntityState.Modified;
@@ -181,6 +192,7 @@ namespace HangoverPartII.Controllers
 
         // POST: Cocktails/Delete/5
         [HttpPost, ActionName("Delete")]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
