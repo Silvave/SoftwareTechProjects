@@ -39,6 +39,7 @@ namespace HangoverPartII.Controllers
         }
 
         // GET: Comments/Create
+        [Authorize]
         public ActionResult Create()
         {
             return View();
@@ -65,6 +66,7 @@ namespace HangoverPartII.Controllers
         }
 
         // GET: Comments/Edit/5
+        [Authorize]
         public ActionResult Edit(int id)
         {
             if (id == null)
@@ -98,6 +100,7 @@ namespace HangoverPartII.Controllers
         }
 
         // GET: Comments/Delete/5
+        [Authorize]
         public ActionResult Delete(int id)
         {
             if (id == null)
@@ -114,6 +117,7 @@ namespace HangoverPartII.Controllers
 
         // POST: Comments/Delete/5
         [HttpPost, ActionName("Delete")]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {

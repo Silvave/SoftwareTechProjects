@@ -13,8 +13,6 @@ namespace HangoverPartII.Models
         public Cocktail()
         {
             Date = DateTime.Now;
-            //Comments = new HashSet<Comment>();
-            //Tags = new HashSet<Tag>();
         }
         [Key]
         public int Id { get; set; }
@@ -42,7 +40,5 @@ namespace HangoverPartII.Models
         public int NetLikeCount { get; set; }
 
         public ICollection<Comment> Comments { get; set; }
-        //public ICollection<CocktailCategory> CocktailCategories { get; set; }
-        //public ICollection<CocktailTag> CocktailTags { get; set; }
     }
 }
