@@ -145,3 +145,16 @@ textarea {
 .CocktailImage {
     border-radius: 65pt;
 }
+.well {
+    clear: both;
+}
+.navbar {
+    background-color: #3f4c77;
+    color: black;
+}
+body {
+    background-image: url(/Images/drink.jpg);
+}
+.back-container {
+    background-color: #bbacab
+}

@@ -16,7 +16,10 @@
         <b style="color: white; font-size: x-large; margin-left: 20%;">@Html.DisplayFor(modelItem => cocktail.Title)</b>
         <div>
             <p style="font-weight: bold; color: whitesmoke;"> @Html.DisplayFor(modelItem => cocktail.NetLikeCount) Likes</p>
-            <p> @Html.ActionLink("Like", "Like", new { id = cocktail.Id })</p>
+            @if (Request.IsAuthenticated)
+            {
+                <p> @Html.ActionLink("Like", "Like", new { id = cocktail.Id })</p>
+            }
         </div>
 
         <a href="@Url.Action("Details", "Cocktails", new { id = cocktail.Id })" class="col-md-3">
