@@ -7,8 +7,9 @@
 <div class="temp">
     <p style="color: black ;text-decoration:none" href="/Cocktails/Create">Create your own cocktail</p>
 </div>
-<hr />
-
+<br/>
+<br />
+<br />  
 @using (Html.BeginForm("Create", "Cocktails", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()

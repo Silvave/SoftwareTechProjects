@@ -2016,7 +2016,9 @@ textarea.input-lg {
        -o-user-select: none;
           user-select: none;
 }
-
+.MYCLASS {
+    margin-right: 40%;
+}
 .btn:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
@@ -2047,6 +2049,15 @@ fieldset[disabled] .btn {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+#Facebook {
+    color: white;
+    background: royalblue;
+}
+#Google {
+    color: white;
+    background: red;
+    margin-bottom: 4pt;
+}
 
 .btn-default {
     font-weight: bold;
@@ -2054,7 +2065,7 @@ fieldset[disabled] .btn {
   background-color: #ffffff;
     border-color: #cccccc;
     width: 280px;
-    margin-left: 12px;
+    margin-left: 9px;
 
 }
 
