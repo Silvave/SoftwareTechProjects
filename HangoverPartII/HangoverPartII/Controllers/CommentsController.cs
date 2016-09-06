@@ -7,119 +7,121 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using HangoverPartII.Models;
+using HangoverPartII.ViewModels;
+using Microsoft.AspNet.Identity;
 
 namespace HangoverPartII.Controllers
 {
-    public class CocktailsController : Controller
+    public class CommentsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: Cocktails
+        // GET: Comments
         public ActionResult Index()
         {
-            //var cocktails = db.Cocktails.Include(c => c.Author).ToList();
-            return View(/*cocktails.ToList()*/);
+            var comments = db.Comments.Include(c => c.Cocktail);
+            return View(comments.ToList());
         }
 
-        // GET: Cocktails/Details/5
-        public ActionResult Details(int? id)
+        // GET: Comments/Details/5
+        public ActionResult Details(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Cocktail cocktail = db.Cocktails.Find(id);
-            if (cocktail == null)
+            Comment comment = db.Comments.Find(id);
+            if (comment == null)
             {
                 return HttpNotFound();
             }
-            return View(cocktail);
+            return View(comment);
         }
 
-        // GET: Cocktails/Create
+        // GET: Comments/Create
         [Authorize]
         public ActionResult Create()
         {
-            //ViewBag.Author_Id = new SelectList(db.ApplicationUsers, "Id", "FullName");
             return View();
         }
 
-        // POST: Cocktails/Create
+        // POST: Comments/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Image,Title,Body,NetLikeCount")] Cocktail cocktail)
+        public ActionResult Create([Bind(Include = "Body")] Comment comment)
         {
+            comment.CocktailId = (int)Session["CocktailID"];
+            comment.UserName = (string)Session["Username"];
+
             if (ModelState.IsValid)
             {
-                cocktail.Author = db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
-                db.Cocktails.Add(cocktail);
+                db.Comments.Add(comment);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Details", "Cocktails", new { id = comment.CocktailId });
             }
 
-            //ViewBag.Author_Id = new SelectList(db.ApplicationUsers, "Id", "FullName");
-            return View(cocktail);
+            return View(comment);
         }
 
-        // GET: Cocktails/Edit/5
+        // GET: Comments/Edit/5
         [Authorize]
-        public ActionResult Edit(int? id)
+        public ActionResult Edit(int id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Cocktail cocktail = db.Cocktails.Find(id);
-            if (cocktail == null)
+            Comment comment = db.Comments.Find(id);
+            if (comment == null)
             {
                 return HttpNotFound();
             }
-            //ViewBag.Author_Id = new SelectList(db.ApplicationUsers, "Id", "FullName");
-            return View(cocktail);
+            ViewBag.CocktailId = new SelectList(db.Cocktails, "Id", "Author_Id", comment.CocktailId);
+            return View(comment);
         }
 
-        // POST: Cocktails/Edit/5
+        // POST: Comments/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Date,Image,Title,Body,NetLikeCount")] Cocktail cocktail)
+        public ActionResult Edit([Bind(Include = "Id,CocktailId,Date,UserName,Body")] Comment comment)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(cocktail).State = EntityState.Modified;
+                db.Entry(comment).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-
-            return View(cocktail);
+            ViewBag.CocktailId = new SelectList(db.Cocktails, "Id", "Author_Id", comment.CocktailId);
+            return View(comment);
         }
 
-        // GET: Cocktails/Delete/5
+        // GET: Comments/Delete/5
         [Authorize]
-        public ActionResult Delete(int? id)
+        public ActionResult Delete(int id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Cocktail cocktail = db.Cocktails.Find(id);
-            if (cocktail == null)
+            Comment comment = db.Comments.Find(id);
+            if (comment == null)
             {
                 return HttpNotFound();
             }
-            return View(cocktail);
+            return View(comment);
         }
 
-        // POST: Cocktails/Delete/5
+        // POST: Comments/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Cocktail cocktail = db.Cocktails.Find(id);
-            db.Cocktails.Remove(cocktail);
+            Comment comment = db.Comments.Find(id);
+            db.Comments.Remove(comment);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
