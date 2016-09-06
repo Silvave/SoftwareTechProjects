@@ -61,6 +61,7 @@ namespace HangoverPartII.Controllers
         }
 
         // GET: Cocktails/Create
+        [Authorize]
         public ActionResult Create()
         {
             return View();
@@ -134,6 +135,7 @@ namespace HangoverPartII.Controllers
         }
 
         // GET: Cocktails/Edit/5
+        [Authorize]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -173,6 +175,7 @@ namespace HangoverPartII.Controllers
         }
 
         // GET: Cocktails/Delete/5
+        [Authorize]
         public ActionResult Delete(int? id)
         {
             if (id == null)
