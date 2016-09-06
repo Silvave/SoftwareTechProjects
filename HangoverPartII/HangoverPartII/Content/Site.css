@@ -153,7 +153,11 @@ textarea {
 }
 body {
     font-family: 'Raleway', sans-serif;
-    background-image: url(/Images/drink.jpg);
+    background: url(/Images/drink.jpg)  no-repeat top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .back-container {
     background-color: rgba(187, 172, 171, 0.6);
@@ -170,7 +174,7 @@ body {
 .comment-field {
     width: 366px;
     height: 70px;
-    text-align: start;
+    text-align: left;
     background-color: #c7a99d;
     color: black;
     overflow-wrap: break-word
@@ -189,6 +193,7 @@ input::-webkit-input-placeholder{
      padding-bottom: 20pt; 
      padding-top: 10pt;
      margin-left: 70px;
+     margin-bottom: 30px;
      border-radius: 10px;
 }
 #Facebook {
