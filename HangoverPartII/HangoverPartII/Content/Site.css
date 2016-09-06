@@ -1,4 +1,5 @@
-﻿body {
+﻿@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -17,12 +18,12 @@
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
+submit,
 input,
 select,
 textarea {
     max-width: 280px;
-<<<<<<< HEAD
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -110,17 +111,6 @@ textarea {
     display: inline-block;
 }
 
-/*.content-field {
-    resize: none;
-    border: 3px solid #f2f2f2;
-    outline: none;
-    width: 550px;
-    height: 300px;
-    border-radius: 15px;
-    text-align: left;
-    font: 12px Lato-Light;
-    padding: 10px;
-}*/
 #CocktailListLogo {
     margin-left: 28%;
     background: black;
@@ -199,7 +189,6 @@ input::-webkit-input-placeholder{
      padding-bottom: 20pt; 
      padding-top: 10pt;
      margin-left: 70px;
-     margin-bottom: 20px;
      border-radius: 10px;
 }
 #Facebook {
@@ -208,11 +197,7 @@ input::-webkit-input-placeholder{
 #Google {
     background-color: red !important;
 }
-.text-mix {
- 
-    color: black !important ;
+#Body {
+    color: black !important;
 }
 
-=======
-}
->>>>>>> a001961ff4220538acae09c56015afa276b886ae

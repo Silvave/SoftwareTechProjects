@@ -169,11 +169,13 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CocktailsController.cs" />
+    <Compile Include="Controllers\CommentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
@@ -182,6 +184,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\CocktailViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -190,6 +193,26 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\0.jpg" />
+    <Content Include="Images\2_1405007169_mojito.png" />
+    <Content Include="Images\4c8599f1-d22b-4a16-a95b-ec08e1a583a4.jpg" />
+    <Content Include="Images\5d1fc232-314a-41ba-a91f-dcf8d39519fa.jpg" />
+    <Content Include="Images\b1b1bf87-c168-41ce-96f3-18b9c1d50e75.jpg" />
+    <Content Include="Images\background.jpg" />
+    <Content Include="Images\BACKGROUNDHome.jpg" />
+    <Content Include="Images\Bulleit-Rye-Mint-Julep.png" />
+    <Content Include="Images\cocktaiList.png" />
+    <Content Include="Images\cocktail_knockout-1.png" />
+    <Content Include="Images\cocktail_vesper-1.png" />
+    <Content Include="Images\cosmopolitan.png" />
+    <Content Include="Images\da7424ef-d053-41c3-87a2-f50ca98d149e.jpg" />
+    <Content Include="Images\ee43c5b0-2d48-4670-b3b1-bfb1e71add15.jpg" />
+    <Content Include="Images\Logo.jpg" />
+    <Content Include="Images\logoo.jpg" />
+    <Content Include="Images\Mexican-Mint-Julep.jpg" />
+    <Content Include="Images\mint-julep.png" />
+    <Content Include="Images\muscat-bleu-ec.png" />
+    <Content Include="Images\PINA_COLADA.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -241,6 +264,11 @@
     <Content Include="Views\Cocktails\Details.cshtml" />
     <Content Include="Views\Cocktails\Edit.cshtml" />
     <Content Include="Views\Cocktails\Index.cshtml" />
+    <Content Include="Views\Comments\Create.cshtml" />
+    <Content Include="Views\Comments\Delete.cshtml" />
+    <Content Include="Views\Comments\Details.cshtml" />
+    <Content Include="Views\Comments\Edit.cshtml" />
+    <Content Include="Views\Comments\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

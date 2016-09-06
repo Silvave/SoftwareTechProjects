@@ -20,6 +20,8 @@ namespace HangoverPartII.Models
 
         public DbSet<Cocktail> Cocktails { get; set; }
 
+        public DbSet<Comment> Comments { get; set; }
+
         //public DbSet<ApplicationUser> ApplicationUsers { get; set; }
     }
 }

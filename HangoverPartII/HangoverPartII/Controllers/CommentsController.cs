@@ -117,6 +117,7 @@ namespace HangoverPartII.Controllers
 
         // POST: Comments/Delete/5
         [HttpPost, ActionName("Delete")]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {

@@ -1,32 +1,37 @@
-﻿@model IEnumerable<HangoverPartII.Models.Cocktail>
+﻿
+@model IEnumerable<HangoverPartII.Models.Cocktail>
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Date)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Image)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Body)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.NetLikeCount)
-        </th>
-        <th></th>
-    </tr>
+<img class="CocktailListLogo" style="margin-left: 28%; background-color: rgba(187, 172, 171, 0.6); padding: 30pt; border-radius: 350pt; margin-top: 15pt;" src="~/Images/cocktaiList.png" />
+<div style="background-color: rgba(187, 172, 171, 0.6); font-size: xx-large; margin-left: 45%; margin-top: 20px; width: 200px; text-align: center; border-radius: 30pt;">
+    <a style="color: whitesmoke; text-decoration:none" href="/Cocktails/Create">Create New</a></div>
+<hr />
+<br />
+<br />
 
-</table>
+@foreach (var cocktail in Model)
+{
+    <div class="col-md-3 single-cocktail" >
+        <b style="color: white; font-size: x-large; margin-left: 20%;">@Html.DisplayFor(modelItem => cocktail.Title)</b>
+        <div>
+            <p style="font-weight: bold; color: whitesmoke;"> @Html.DisplayFor(modelItem => cocktail.NetLikeCount) Likes</p>
+            @if (Request.IsAuthenticated)
+            {
+                <p> @Html.ActionLink("Like", "Like", new { id = cocktail.Id }, new { @class = "btn btn-primary like-button" })</p>
+            }
+        </div>
+
+        <a href="@Url.Action("Details", "Cocktails", new { id = cocktail.Id })" class="col-md-3">
+            <img style="border-radius: 65pt" src="@Url.Content(String.Format("~/Images/{0}", cocktail.Image))"
+                 width="200" height="200" />
+        </a>
+
+
+    </div>
+
+
+}
