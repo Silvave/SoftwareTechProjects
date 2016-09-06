@@ -1,5 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css?family=Raleway');
-body {
+﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -18,11 +17,11 @@ body {
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
-submit,
 input,
 select,
 textarea {
     max-width: 280px;
+<<<<<<< HEAD
     color: black;
     text-decoration: none;
 }
@@ -214,3 +213,6 @@ input::-webkit-input-placeholder{
     color: black !important ;
 }
 
+=======
+}
+>>>>>>> a001961ff4220538acae09c56015afa276b886ae
